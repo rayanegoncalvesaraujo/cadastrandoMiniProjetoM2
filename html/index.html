@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de produtos</title>
+  <link rel="stylesheet" href="/css/index.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" type="img" href="/img/candy.png">
+</head>
+ 
+<body>
+  <div class="container">
+    <div class="header">
+    <img src="/img/candy.png" alt="candy">
+    
+       <h2>PRODUTOS DISPONÍVEIS</h2>
+      <button onclick="openModal()" id="new">CADASTRE O PRODUTO</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-nome">Produto</label>
+          <input id="m-nome" type="text" required />
+  
+          <label for="m-funcao">Descrição</label>
+          <input id="m-funcao" type="text" required />
+  
+          <label for="m-salario">Valor</label>
+          <input id="m-salario" type="number" required />
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="/js/index.js"></script>
+</body>
+
+</html> 
